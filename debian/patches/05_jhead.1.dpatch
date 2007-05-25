@@ -5,32 +5,32 @@
 ## DP: No description.
 
 @DPATCH@
-diff -urNad jhead-2.60~/jhead.1 jhead-2.60/jhead.1
---- jhead-2.60~/jhead.1	2006-08-01 22:29:30.000000000 +0200
-+++ jhead-2.60/jhead.1	2006-11-28 21:42:33.000000000 +0100
-@@ -57,16 +57,17 @@
- I have not encountered any adverse side effects of deleting the thumbnails, even from the
- software provided with my old Olympus digicam.  Use with caution.
+diff -urNad jhead-2.70~/jhead.1 jhead-2.70/jhead.1
+--- jhead-2.70~/jhead.1	2007-01-12 03:54:53.000000000 +0100
++++ jhead-2.70/jhead.1	2007-05-25 16:16:39.000000000 +0200
+@@ -267,16 +267,17 @@
+ If a '-' is specified for the output file, the thumbnail is sent to stdout. (UNIX build only)
+ 
  .TP
 -.B \-rt
 -Replace thumbnails from the Exif header.
 +.B \-rt file
-+Replace thumbnails from the Exif header with the content of file
-+.IR file .
++Replace thumbnails from the Exif header  with the content of file
+++.IR file .
  This only works if the exif header already contains a thumbnail, and the thumbnail is at the
  end of the header (both always the case if the photo came from a digital camera)
  .TP
- .B \-rgt
+ .BI \-\^rgt \ size
 -Regnerate exif thumbnail.
 +Regenerate exif thumbnail.
  'size' specifies maximum height or width of thumbnail.
  Relies on 'mogrify' program (from ImageMagick) to regenerate the thumbnail.
 -This only works if the image already contains a thumbail.  
 +This only works if the image already contains a thumbnail.  
+ 
+ .SH ROTATION OPTIONS
  .TP
- .B \-de
- Delete the Exif header entirely.  This leaves comments in the comment
-@@ -179,8 +180,8 @@
+@@ -335,8 +336,8 @@
  
  .B jhead -model S100 *.jpg
  
@@ -40,16 +40,16 @@ diff -urNad jhead-2.60~/jhead.1 jhead-2.60/jhead.1
 +Canon S100 digicam, (see the -cmd option).
  .TP
  .B \-exonly
- Skip all files that don't have an Exif header.  This skips all files that did not
-@@ -316,12 +317,12 @@
+ Skip all files that don't have an Exif header.  Photos straight from a digital camera
+@@ -365,12 +366,12 @@
  
  Having a whole directory tree of photos from my S100, I run the following commands:
  
 -.B jhead -cmd "mogrify -quality 80 &i" -model S100 -r *.jpg
-+ jhead -cmd "mogrify -quality 80 &i" -model S100 *.jpg
++.B jhead -cmd "mogrify -quality 80 &i" -model S100 *.jpg
  .br
 -.B jhead -cmd "jpegtran -progressive &i > &o" -r *.jpg
-+ jhead -cmd "jpegtran -progressive &i > &o" *.jpg
++.B jhead -cmd "jpegtran -progressive &i > &o" *.jpg
  
  The first command mogrifies all JPEGs in the tree that indicate that they are from a 
 -Cannon S100 in their Exif header to 80% quality at the same resolution.  This is a 'lossy'
@@ -57,9 +57,9 @@ diff -urNad jhead-2.60~/jhead.1 jhead-2.60/jhead.1
  process, so I only run it on files that are from the Canon, and only run it once.
  The next command then takes a JPEGs and converts them to progressive JPEGs.  The result
  is the same images, with no discernible differences, stored in half the space.  This only
-diff -urNad jhead-2.60~/readme.txt jhead-2.60/readme.txt
---- jhead-2.60~/readme.txt	2006-06-18 19:00:01.000000000 +0200
-+++ jhead-2.60/readme.txt	2006-11-28 21:41:41.000000000 +0100
+diff -urNad jhead-2.70~/readme.txt jhead-2.70/readme.txt
+--- jhead-2.70~/readme.txt	2007-01-12 03:54:53.000000000 +0100
++++ jhead-2.70/readme.txt	2007-05-25 16:16:56.000000000 +0200
 @@ -46,7 +46,7 @@
      the RPMs under RedHat 7.2 myself.
     

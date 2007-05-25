@@ -5,10 +5,10 @@
 ## DP: No description.
 
 @DPATCH@
-diff -urNad jhead-2.60~/jhead.c jhead-2.60/jhead.c
---- jhead-2.60~/jhead.c	2006-06-18 19:00:01.000000000 +0200
-+++ jhead-2.60/jhead.c	2006-12-26 10:22:38.000000000 +0100
-@@ -1154,8 +1154,8 @@
+diff -urNad jhead-2.70~/jhead.c jhead-2.70/jhead.c
+--- jhead-2.70~/jhead.c	2007-01-12 03:54:53.000000000 +0100
++++ jhead-2.70/jhead.c	2007-05-25 16:18:49.000000000 +0200
+@@ -1177,8 +1177,8 @@
             "             To deal with different months and years having different numbers of\n"
             "             days, a simple date-month-year offset would result in unexpected\n"
             "             results.  Instead, the difference is specified as desired date\n"
@@ -18,8 +18,8 @@ diff -urNad jhead-2.60~/jhead.c jhead-2.60/jhead.c
 +           "             and time in the format yyyy:mm:dd/hh:mm:ss\n"
             "  -ts<time>  Set the Exif internal time to <time>.  <time> is in the format\n"
             "             yyyy:mm:dd-hh:mm:ss\n"
- 
-@@ -1419,7 +1419,7 @@
+            "  -ds<date>  Set the Exif internal date.  <date> is in the format YYYY:MM:DD\n"
+@@ -1459,7 +1459,7 @@
              if (c) *c = ' '; // Replace '-' with a space.
              
              if (!Exif2tm(&tm, arg+3)){
