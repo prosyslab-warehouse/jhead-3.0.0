@@ -1,3 +1,9 @@
+jhead (2.70-1) unstable; urgency=low
+
+  * New upstream realease
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Fri, 25 May 2007 15:45:02 +0200
+
 jhead (2.60-4) unstable; urgency=low
 
   * debian/patches/06_jhead_c.dpatch: change "yyyy:mmm:dd" in "yyyy:mm:dd"
