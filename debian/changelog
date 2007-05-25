@@ -1,0 +1,195 @@
+jhead (2.60-4) unstable; urgency=low
+
+  * debian/patches/06_jhead_c.dpatch: change "yyyy:mmm:dd" in "yyyy:mm:dd"
+    Closes: #404527: "jhead: typo in error message for option -ts"
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Tue, 26 Dec 2006 10:23:05 +0100
+
+jhead (2.60-3) unstable; urgency=low
+
+  * debian/patches/05_jhead.1.dpatch: update. Closes: #400534: jhead: Typos in
+    man page
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Tue, 28 Nov 2006 21:43:01 +0100
+
+jhead (2.60-2) unstable; urgency=low
+
+  * debian/patches/05_jhead.1.dpatch: update. Closes: #379516: jhead: Example
+    in man page has mistakes
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Tue,  1 Aug 2006 22:33:49 +0200
+
+jhead (2.60-1) unstable; urgency=low
+
+  * New upstream realease
+  * debian/patches/05_jhead.1.dpatch
+    - Closes: #367580: jhead: man page typo: "thumbail" -> "thumbnail"
+    - Closes: #367581: jhead: Typo in man page: "Regnerate" -> "Regenerate"
+    - Closes: #367582: jhead: Typo in readme.txt: "Liscence" -> "Licence"
+    - Closes: #367587: jhead: Documentation of -rt is confused.
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Wed, 17 May 2006 23:28:13 +0200
+
+jhead (2.50-1) unstable; urgency=low
+
+  * rename upstream version 2.5 in 2.50 since 2.5 < 2.44 according to Debian
+    Installer <installer@ftp-master.debian.org>
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun, 26 Feb 2006 17:46:24 +0100
+
+jhead (2.5-1) unstable; urgency=low
+
+  * New upstream version
+   - debian/patches/02_jhead.1.dpatch: patch included upstream
+   - debian/patches/03_jhead.c.dpatch: patch included upstream
+  * debian/patches/04_cast.dpatch: the compilation failed because of a cast
+  * debian/compat: 3 -> 4
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun, 26 Feb 2006 17:21:48 +0100
+
+jhead (2.44-1) unstable; urgency=low
+
+  * New upstream version
+  * debian/patches/02_jhead.1.dpatch: include a patch. Closes: #329704
+    "Typo fix: "freindly" --> "friendly" in the man page"
+  * debian/control: Standards-Version: 3.6.1 -> 3.6.2: no change
+  * debian/patches/03_jhead.c.dpatch: keep the access rights of the original
+    file. Closes: #330242 "jhead -ce changes file permissions"
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun,  9 Oct 2005 00:17:14 +0200
+
+jhead (2.41-1) unstable; urgency=low
+
+  * New upstream release
+   - Closes: #284541 "zophImport: gets camera model wrong"
+  * debian/patches/02_jhead.1.dpatch: Closes: #314640 "Typo in manual page
+    (of->or)"
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Fri, 17 Jun 2005 20:00:42 +0200
+
+jhead (2.4-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Fri, 17 Jun 2005 16:28:38 +0200
+
+jhead (2.3-2) unstable; urgency=low
+
+  * debian/control: add Depends: libjpeg-progs
+    Closes: #292617 "missing dependency (libjpeg-progs)"
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Fri, 28 Jan 2005 12:09:19 +0100
+
+jhead (2.3-1) unstable; urgency=low
+
+  * New upstream release
+   - Closes: #290571 "New upstream release"
+   - Closes: #274055 "Shouldn't touch read-only files"
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sat, 15 Jan 2005 16:42:52 +0100
+
+jhead (2.2-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/copyright: update to sync the copyright statement with upstream
+    readme.txt
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Wed, 14 Jul 2004 14:34:43 +0200
+
+jhead (2.1-4) unstable; urgency=low
+
+  * debian/patches/03_jhead.1.dpatch: some typos corrections for jhead.1
+    Closes: #244627
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Mon, 19 Apr 2004 16:32:14 +0200
+
+jhead (2.1-3) unstable; urgency=low
+
+  * debian/patches/02_usage.html.dpatch: correct usage.html, Closes: #162340
+   - s/Jpeg/JPEG/
+   - s/exif/Exif/
+   - s/ImageMagic/ImageMagick/
+   - s/dos/DOS/
+  * debian/patches/03_jhead.1.dpatch: correct jhead.1, Closes: #233002
+   - s/Jpeg/JPEG/
+   - s/exif/Exif/
+   - and some other mistakes
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Fri, 20 Feb 2004 15:20:34 +0100
+
+jhead (2.1-2) unstable; urgency=low
+
+  * debian/control: change maintainer :-)
+  * acknowledge my own NMU: Closes: #162026, #202794, #161801, #189049,
+    #188514, #162234
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun,  1 Feb 2004 17:25:59 +0100
+
+jhead (2.1-1) unstable; urgency=low
+
+  * New maintainer. Thanks to Dave Baker.
+  * New upstream release
+   - Closes: #162026 "New upstream available..."
+   - Closes: #202794 "new release 2.0 available"
+   - Closes: #161801 "enhanced file renaming"
+  * debian/copyright:
+   - update copyright from upstream readme.txt
+   - use upstream email format as in readme.txt. Closes: #189049 "Upstream
+   author objects to have his email address listed in the documentation."
+  * debian/docs: include changes.txt in the package. Closes: #188514
+  * debian/control: Standards-Version: 3.5.2 -> 3.6.1
+  * debian/jhead.sgml:
+   - removed since upstream distribute a manpage
+   - so no need to patch jhead.sgml anymore, Closes: #162234 "manpage omits
+   some options"
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun,  1 Feb 2004 16:37:09 +0100
+
+jhead (1.8-2) unstable; urgency=low
+
+  * Typos corrected in usage.html and man page.  (Closes: #160289)
+
+ -- Dave Baker <dsb3@debian.org>  Tue, 24 Sep 2002 22:42:03 -0400
+
+jhead (1.8-1) unstable; urgency=low
+
+  * New upstream release (Closes: #151062)
+  * Preliminary package for new binary - documentation (not included
+    in upstream source) has not yet been updated.
+
+ -- Dave Baker <dsb3@debian.org>  Tue,  6 Aug 2002 09:29:53 -0400
+
+jhead (1.6-2) unstable; urgency=low
+
+  * Bugfix - added "-f Makefile" to debian/rules to avoid using original
+    "makefile" from upstream which doesn't do all that we need it to.
+    Closes: #132353
+
+ -- Dave Baker <dsb3@debian.org>  Mon,  4 Feb 2002 13:51:23 -0500
+
+jhead (1.6-1) unstable; urgency=low
+
+  * New upstream release (Closes: #131048)
+
+ -- Dave Baker <dsb3@debian.org>  Sat, 26 Jan 2002 21:25:21 -0500
+
+jhead (1.5.5-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Dave Baker <dsb3@debian.org>  Wed,  9 Jan 2002 12:35:57 -0500
+
+jhead (1.5-2) unstable; urgency=low
+
+  * Updated debian/copyright file with text from readme.txt (not webpage)
+    that I think more accurately expresses the author's wishes.
+  * Makefile changes, Added 'upstream' URL to description.
+
+ -- Dave Baker <dsb3@debian.org>  Fri,  5 Jan 2002 00:29:47 -0500
+
+jhead (1.5-1) unstable; urgency=low
+
+  * Initial Release.
+  * Closes: #127228  (ITP announcement)
+
+ -- Dave Baker <dsb3@debian.org>  Sun, 30 Dec 2001 16:17:45 -0500

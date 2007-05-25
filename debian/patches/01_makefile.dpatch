@@ -1,0 +1,20 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+##  by Ludovic Rousseau <rousseau@debian.org>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: correct makefile
+
+@DPATCH@
+--- jhead-2.1/makefile	2004-01-10 02:18:40.000000000 +0100
++++ jhead-2.1/makefile	2004-02-01 00:03:55.000000000 +0100
+@@ -13,3 +13,10 @@
+ 
+ jhead: $(objs) jhead.h
+ 	${CC} -o jhead $(objs) -lm
++
++clean:
++	rm -f $(objs) jhead
++
++install:
++	cp jhead ${DESTDIR}/usr/bin/
++

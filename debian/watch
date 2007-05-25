@@ -1,0 +1,2 @@
+version=2
+http://www.sentex.net/~mwandel/jhead/ (?:.*/)?jhead-?_?([\d+\.]+|\d+)(\.tar|\.tgz)(\.gz|\.bz2|) debian uupdate

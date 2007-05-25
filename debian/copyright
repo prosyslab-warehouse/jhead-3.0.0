@@ -1,0 +1,19 @@
+This package was debianized by Dave Baker <dsb3@debian.org> on
+Sun, 30 Dec 2001 16:17:45 -0500.
+
+It was downloaded from http://www.sentex.net/~mwandel/jhead/
+
+Upstream Author: Matthias Wandel  <mwandel(at)sentex.net>
+
+Copyright:
+
+This text taken verbatim from the readme.txt:
+
+    Jhead is public domain software - that is, you can do whatever you want
+    with it, and include it software that is licensesed under the GNU or the 
+    BSD license, or whatever other licence you chose, including proprietary
+    closed source licenses.  Although not part of the liscense, I do expect
+    common courtesy, please.
+
+    If you do integrate the code into some software of yours, I'd appreciate
+    knowing about it though

@@ -1,0 +1,71 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 05_jhead.1.dpatch by  <rousseau@acer.maison.bogus>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No description.
+
+@DPATCH@
+diff -urNad jhead-2.60~/jhead.1 jhead-2.60/jhead.1
+--- jhead-2.60~/jhead.1	2006-08-01 22:29:30.000000000 +0200
++++ jhead-2.60/jhead.1	2006-11-28 21:42:33.000000000 +0100
+@@ -57,16 +57,17 @@
+ I have not encountered any adverse side effects of deleting the thumbnails, even from the
+ software provided with my old Olympus digicam.  Use with caution.
+ .TP
+-.B \-rt
+-Replace thumbnails from the Exif header.
++.B \-rt file
++Replace thumbnails from the Exif header with the content of file
++.IR file .
+ This only works if the exif header already contains a thumbnail, and the thumbnail is at the
+ end of the header (both always the case if the photo came from a digital camera)
+ .TP
+ .B \-rgt
+-Regnerate exif thumbnail.
++Regenerate exif thumbnail.
+ 'size' specifies maximum height or width of thumbnail.
+ Relies on 'mogrify' program (from ImageMagick) to regenerate the thumbnail.
+-This only works if the image already contains a thumbail.  
++This only works if the image already contains a thumbnail.  
+ .TP
+ .B \-de
+ Delete the Exif header entirely.  This leaves comments in the comment
+@@ -179,8 +180,8 @@
+ 
+ .B jhead -model S100 *.jpg
+ 
+-I use this option to restrict my JPEG recompensing to those images that came from my 
+-Cannon S100 digicam, (see the -cmd option).
++I use this option to restrict my JPEG rectification to those images that came from my 
++Canon S100 digicam, (see the -cmd option).
+ .TP
+ .B \-exonly
+ Skip all files that don't have an Exif header.  This skips all files that did not
+@@ -316,12 +317,12 @@
+ 
+ Having a whole directory tree of photos from my S100, I run the following commands:
+ 
+-.B jhead -cmd "mogrify -quality 80 &i" -model S100 -r *.jpg
++ jhead -cmd "mogrify -quality 80 &i" -model S100 *.jpg
+ .br
+-.B jhead -cmd "jpegtran -progressive &i > &o" -r *.jpg
++ jhead -cmd "jpegtran -progressive &i > &o" *.jpg
+ 
+ The first command mogrifies all JPEGs in the tree that indicate that they are from a 
+-Cannon S100 in their Exif header to 80% quality at the same resolution.  This is a 'lossy'
++Canon S100 in their Exif header to 80% quality at the same resolution.  This is a 'lossy'
+ process, so I only run it on files that are from the Canon, and only run it once.
+ The next command then takes a JPEGs and converts them to progressive JPEGs.  The result
+ is the same images, with no discernible differences, stored in half the space.  This only
+diff -urNad jhead-2.60~/readme.txt jhead-2.60/readme.txt
+--- jhead-2.60~/readme.txt	2006-06-18 19:00:01.000000000 +0200
++++ jhead-2.60/readme.txt	2006-11-28 21:41:41.000000000 +0100
+@@ -46,7 +46,7 @@
+     the RPMs under RedHat 7.2 myself.
+    
+ 
+-Liscence:
++Licence:
+ 
+     Jhead is public domain software - that is, you can do whatever you want
+     with it, and include it software that is licensesed under the GNU or the 
