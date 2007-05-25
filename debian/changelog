@@ -1,8 +1,9 @@
 jhead (2.70-1) unstable; urgency=low
 
   * New upstream realease
+   - Closes: #425990: "Please provide new upstream release"
 
- -- Ludovic Rousseau <rousseau@debian.org>  Fri, 25 May 2007 15:45:02 +0200
+ -- Ludovic Rousseau <rousseau@debian.org>  Fri, 25 May 2007 16:25:47 +0200
 
 jhead (2.60-4) unstable; urgency=low
 
