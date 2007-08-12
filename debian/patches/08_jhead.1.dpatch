@@ -1,0 +1,19 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 08_jhead.1.dpatch by  <rousseau@localhost.localdomain>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No description.
+
+@DPATCH@
+diff -urNad jhead-2.70~/jhead.1 jhead-2.70/jhead.1
+--- jhead-2.70~/jhead.1	2007-08-12 13:13:37.000000000 +0200
++++ jhead-2.70/jhead.1	2007-08-12 13:14:08.000000000 +0200
+@@ -205,7 +205,7 @@
+ 
+ Year on camera was set to 2005 instead of 2004 for pictures taken in April
+ .br
+-jhead -da2005:03:01-2004:03:01
++jhead -da2004:03:01-2005:03:01
+ 
+ Default camera date is 2002:01:01, and date was reset on 2005:05:29 at 11:21 am
+ .br
