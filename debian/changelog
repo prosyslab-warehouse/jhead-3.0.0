@@ -1,3 +1,9 @@
+jhead (2.80-1) unstable; urgency=low
+
+  * New upstream realease
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Thu, 06 Dec 2007 21:36:23 +0100
+
 jhead (2.70-2) unstable; urgency=low
 
   * debian/patches/07_jhead.1.dpatch: Closes: #435072: "jhead: date+time format
