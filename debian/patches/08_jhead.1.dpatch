@@ -2,7 +2,7 @@
 ## 08_jhead.1.dpatch by  <rousseau@localhost.localdomain>
 ##
 ## All lines beginning with `## DP:' are a description of the patch.
-## DP: No description.
+## DP: Closes: #435073: "jhead: -da example in man page reverses the dates"
 
 @DPATCH@
 diff -urNad jhead-2.70~/jhead.1 jhead-2.70/jhead.1

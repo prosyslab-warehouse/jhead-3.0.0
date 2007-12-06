@@ -3,8 +3,9 @@ jhead (2.80-1) unstable; urgency=low
   * New upstream realease
    - remove debian/patches/06_jhead_c.dpatch: included upstream
   * debian/control: add the Homepage: field
+  * debian/patches/0{5,7,8}_jhead.1.dpatch add dpatch description
 
- -- Ludovic Rousseau <rousseau@debian.org>  Thu, 06 Dec 2007 22:00:03 +0100
+ -- Ludovic Rousseau <rousseau@debian.org>  Thu, 06 Dec 2007 22:02:10 +0100
 
 jhead (2.70-2) unstable; urgency=low
 

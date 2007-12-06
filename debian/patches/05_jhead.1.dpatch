@@ -2,7 +2,7 @@
 ## 05_jhead.1.dpatch by  <rousseau@acer.maison.bogus>
 ##
 ## All lines beginning with `## DP:' are a description of the patch.
-## DP: No description.
+## DP: Closes: #400534: jhead: Typos in man page
 
 @DPATCH@
 diff -urNad jhead-2.70~/jhead.1 jhead-2.70/jhead.1
