@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Ludovic Rousseau <rousseau@debian.org>
 Build-Depends: debhelper (>> 4.0.0), dpatch
 Standards-Version: 3.7.2
+Homepage: http://www.sentex.net/~mwandel/jhead/
 
 Package: jhead
 Architecture: any
@@ -15,6 +16,3 @@ Description: manipulate the non-image part of Exif compliant JPEG files
  shutter speed, etc. It is also able to reduce the size of digital camera JPEGs
  without loss of information, by deleting integral thumbnails that digital
  cameras put into the Exif header.
- .
- Upstream is: http://www.sentex.net/~mwandel/jhead/
-
