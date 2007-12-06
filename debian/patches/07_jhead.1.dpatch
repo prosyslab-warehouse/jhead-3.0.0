@@ -8,15 +8,6 @@
 diff -urNad jhead-2.70~/jhead.1 jhead-2.70/jhead.1
 --- jhead-2.70~/jhead.1	2007-08-12 13:08:48.000000000 +0200
 +++ jhead-2.70/jhead.1	2007-08-12 13:09:27.000000000 +0200
-@@ -199,7 +199,7 @@
- how many days the timestamp needs to be adjusted by, including leap years and daylight
- savings time changes.
- The dates are specified as yyyy:mm:dd.  For sub-day adjustments, a time of day can also
--be included, by specifying yyyy:nn:dd+hh:mm or yyyy:mm:dd+hh:mm:ss
-+be included, by specifying yyyy:nn:dd/hh:mm or yyyy:mm:dd/hh:mm:ss
- 
- Examples:
- 
 @@ -209,7 +209,7 @@
  
  Default camera date is 2002:01:01, and date was reset on 2005:05:29 at 11:21 am
