@@ -1,8 +1,9 @@
 jhead (2.80-1) unstable; urgency=low
 
   * New upstream realease
+   - remove debian/patches/06_jhead_c.dpatch: included upstream
 
- -- Ludovic Rousseau <rousseau@debian.org>  Thu, 06 Dec 2007 21:36:23 +0100
+ -- Ludovic Rousseau <rousseau@debian.org>  Thu, 06 Dec 2007 21:44:59 +0100
 
 jhead (2.70-2) unstable; urgency=low
 
