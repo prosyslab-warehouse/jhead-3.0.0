@@ -1,3 +1,9 @@
+jhead (2.82-1) UNRELEASED; urgency=low
+
+  * (NOT RELEASED YET) New upstream release
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sat, 24 May 2008 08:56:49 +0200
+
 jhead (2.80-1) unstable; urgency=low
 
   * New upstream realease
