@@ -2,8 +2,9 @@ jhead (2.82-1) UNRELEASED; urgency=low
 
   * (NOT RELEASED YET) New upstream release
   * debian/patches/09_long_int.dpatch: avoid some compiler warnings
+  * debian/patches/10_jhead.1.dpatch: avoid a lintian warning
 
- -- Ludovic Rousseau <rousseau@debian.org>  Sat, 24 May 2008 13:46:06 +0200
+ -- Ludovic Rousseau <rousseau@debian.org>  Sat, 24 May 2008 13:56:25 +0200
 
 jhead (2.80-1) unstable; urgency=low
 

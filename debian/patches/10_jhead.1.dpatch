@@ -1,0 +1,51 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 10_jhead.1.dpatch by  <rousseau@imac.maison.bogus>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: $ man --warnings -l jhead.1 > /dev/null
+## DP: <standard input>:46: warning: `relative' not defined
+## DP: <standard input>:54: warning: `&'' not defined
+## DP: <standard input>:282: warning: `size'' not defined
+## DP: solution: reformat the text to avoid a ' on the first column
+
+@DPATCH@
+diff -urNad jhead-2.82~/jhead.1 jhead-2.82/jhead.1
+--- jhead-2.82~/jhead.1	2008-04-03 16:52:20.000000000 +0200
++++ jhead-2.82/jhead.1	2008-05-24 13:53:55.000000000 +0200
+@@ -42,16 +42,16 @@
+ 
+ This feature has an interesting 'relative path' option for specifying the 
+ thumbnail name.  Whenever the <name> contains the characters '&i', jhead 
+-will substitute the original  filename for this name. This allows creating a 
+-'relative name' when doing a whole batch  of files. For example, the 
+-incantation:
++will substitute the original  filename for this name. This allows
++creating a 'relative name' when doing a whole batch  of files. For
++example, the incantation:
+ 
+ .B jhead -te "originals\&i" *.jpg
+ 
+ would transfer the exif header for each .jpg file in the originals directory by 
+ the same name, Both Win32 and most Unix shells treat the '&' character in a 
+-special way, so you have to put quotes around that command line option for the 
+-'&' to even be passed to the program.
++special way, so you have to put quotes around that command line option
++for the '&' to even be passed to the program.
+ 
+ .TP
+ .B \-dc
+@@ -278,10 +278,10 @@
+ end of the header (both always the case if the photo came from a digital camera)
+ .TP
+ .BI \-\^rgt \ size
+-Regnerate exif thumbnail.
+-'size' specifies maximum height or width of thumbnail.
+-Relies on 'mogrify' program (from ImageMagick) to regenerate the thumbnail.
+-This only works if the image already contains a thumbail.  
++Regnerate exif thumbnail.  'size' specifies maximum height or width of
++thumbnail.  Relies on 'mogrify' program (from ImageMagick) to regenerate
++the thumbnail.  This only works if the image already contains a
++thumbail.  
+ 
+ .SH ROTATION OPTIONS
+ .TP
