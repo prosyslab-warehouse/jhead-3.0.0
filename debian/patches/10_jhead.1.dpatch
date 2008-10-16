@@ -9,9 +9,9 @@
 ## DP: solution: reformat the text to avoid a ' on the first column
 
 @DPATCH@
-diff -urNad jhead-2.82~/jhead.1 jhead-2.82/jhead.1
---- jhead-2.82~/jhead.1	2008-05-24 14:18:29.000000000 +0200
-+++ jhead-2.82/jhead.1	2008-05-24 14:18:51.000000000 +0200
+diff -urNad jhead-2.84~/jhead.1 jhead-2.84/jhead.1
+--- jhead-2.84~/jhead.1	2008-10-16 21:09:40.000000000 +0200
++++ jhead-2.84/jhead.1	2008-10-16 21:09:58.000000000 +0200
 @@ -42,16 +42,16 @@
  
  This feature has an interesting 'relative path' option for specifying the 
@@ -34,14 +34,14 @@ diff -urNad jhead-2.82~/jhead.1 jhead-2.82/jhead.1
  
  .TP
  .B \-dc
-@@ -279,10 +279,10 @@
+@@ -278,10 +278,10 @@
  end of the header (both always the case if the photo came from a digital camera)
  .TP
  .BI \-\^rgt \ size
--Regenerate exif thumbnail.
+-Regnerate exif thumbnail.
 -'size' specifies maximum height or width of thumbnail.
 -Relies on 'mogrify' program (from ImageMagick) to regenerate the thumbnail.
--This only works if the image already contains a thumbnail.  
+-This only works if the image already contains a thumbail.  
 +Regenerate exif thumbnail.  'size' specifies maximum height or width of
 +thumbnail.  Relies on 'mogrify' program (from ImageMagick) to regenerate
 +the thumbnail.  This only works if the image already contains a
