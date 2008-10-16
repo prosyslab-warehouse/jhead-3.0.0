@@ -6,8 +6,9 @@ jhead (2.84-1) unstable; urgency=high
    before 2.84 might allow context-dependent attackers to cause a denial of
    service (crash) via (1) a long -cmd argument and (2) possibly other
    unspecified vectors."
+  * debian/patches/05_jhead.1.dpatch: removed since applied upstream
 
- -- Ludovic Rousseau <rousseau@debian.org>  Thu, 16 Oct 2008 20:40:06 +0200
+ -- Ludovic Rousseau <rousseau@debian.org>  Thu, 16 Oct 2008 20:53:20 +0200
 
 jhead (2.82-1) unstable; urgency=low
 
