@@ -1,0 +1,64 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 11_jhead.c.dpatch by  <rousseau@imac.maison.bogus>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: Closes: #503645: jhead: CVE-2008-4640, CVE-2008-4641 command
+## injection via filename and insecure file handling
+## patch from Bruno De Fraine
+
+@DPATCH@
+diff -urNad jhead-2.84.obsolete.0.752713788840087~/jhead.c jhead-2.84.obsolete.0.752713788840087/jhead.c
+--- jhead-2.84.obsolete.0.752713788840087~/jhead.c	2008-10-31 20:08:39.000000000 +0100
++++ jhead-2.84.obsolete.0.752713788840087/jhead.c	2008-10-31 20:10:07.000000000 +0100
+@@ -293,6 +293,35 @@
+ 
+ #endif // MATTHIAS
+ 
++ 
++//--------------------------------------------------------------------------
++// Escape an argument such that it is interpreted literally by the  shell
++// (returns the number of written characters)
++//--------------------------------------------------------------------------
++static int shellescape(char* to, const char* from)
++{
++	int i, j;
++	i = j = 0;
++
++	// Enclosing characters in double quotes preserves the literal value of
++	// all characters within the quotes, with the exception of $, `, and \.
++	to[j++] = '"';
++	while(from[i])
++	{
++		switch(from[i]) {
++			case '"':
++			case '$':
++			case '`':
++			case '\\':
++				to[j++] = '\\';
++			default:
++				to[j++] = from[i++];
++		}
++	}
++	to[j++] = '"';
++	return j;
++}
++
+ 
+ //--------------------------------------------------------------------------
+ // Apply the specified command to the JPEG file.
+@@ -316,13 +345,13 @@
+         if (ApplyCommand[a] == '&'){
+             if (ApplyCommand[a+1] == 'i'){
+                 // Input file.
+-                e += sprintf(ExecString+e, "\"%s\"",FileName);
++                e += shellescape(ExecString+e, FileName);
+                 a += 1;
+                 continue;
+             }
+             if (ApplyCommand[a+1] == 'o'){
+                 // Needs an output file distinct from the input file.
+-                e += sprintf(ExecString+e, "\"%s\"",TempName);
++                e += shellescape(ExecString+e, TempName);
+                 a += 1;
+                 TempUsed = TRUE;
+                 unlink(TempName);// Remove any pre-existing temp file

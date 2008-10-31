@@ -1,3 +1,11 @@
+jhead (2.84-2) unstable; urgency=high
+
+  * urgency high since it fixes a security RC bug: CVE-2008-4641
+  * debian/patches/11_jhead.c.dpatch: Closes: #503645: jhead: CVE-2008-4641
+    command injection via filename and insecure file handling
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Fri, 31 Oct 2008 19:53:26 +0100
+
 jhead (2.84-1) unstable; urgency=high
 
   * New upstream release
