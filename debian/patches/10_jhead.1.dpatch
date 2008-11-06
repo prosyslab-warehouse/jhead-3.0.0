@@ -9,9 +9,8 @@
 ## DP: solution: reformat the text to avoid a ' on the first column
 
 @DPATCH@
-diff -urNad jhead-2.84~/jhead.1 jhead-2.84/jhead.1
---- jhead-2.84~/jhead.1	2008-10-16 21:09:40.000000000 +0200
-+++ jhead-2.84/jhead.1	2008-10-16 21:09:58.000000000 +0200
+--- a/jhead.1
++++ b/jhead.1
 @@ -42,16 +42,16 @@
  
  This feature has an interesting 'relative path' option for specifying the 

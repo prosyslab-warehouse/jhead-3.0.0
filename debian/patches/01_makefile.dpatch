@@ -5,10 +5,9 @@
 ## DP: correct makefile
 
 @DPATCH@
-diff -urNad jhead-2.70~/makefile jhead-2.70/makefile
---- jhead-2.70~/makefile	2007-01-12 03:54:53.000000000 +0100
-+++ jhead-2.70/makefile	2007-05-25 15:52:20.000000000 +0200
-@@ -13,3 +13,10 @@
+--- a/makefile
++++ b/makefile
+@@ -14,3 +14,10 @@
  
  jhead: $(objs) jhead.h
  	${CC} -o jhead $(objs) -lm

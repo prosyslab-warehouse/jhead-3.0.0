@@ -5,10 +5,9 @@
 ## DP:  Closes: #435072: "jhead: date+time format for -da needs / separator"
 
 @DPATCH@
-diff -urNad jhead-2.70~/jhead.1 jhead-2.70/jhead.1
---- jhead-2.70~/jhead.1	2007-08-12 13:08:48.000000000 +0200
-+++ jhead-2.70/jhead.1	2007-08-12 13:09:27.000000000 +0200
-@@ -209,7 +209,7 @@
+--- a/jhead.1
++++ b/jhead.1
+@@ -214,7 +214,7 @@
  
  Default camera date is 2002:01:01, and date was reset on 2005:05:29 at 11:21 am
  .br

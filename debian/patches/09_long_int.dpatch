@@ -8,10 +8,9 @@
 ## DP: makernote.c:29: warning: format ‘%05d’ expects type ‘int’, but argument 3 has type ‘long int’
 
 @DPATCH@
-diff -urNad jhead-2.82~/exif.c jhead-2.82/exif.c
---- jhead-2.82~/exif.c	2008-04-03 16:52:21.000000000 +0200
-+++ jhead-2.82/exif.c	2008-05-24 13:41:47.000000000 +0200
-@@ -402,7 +402,7 @@
+--- a/exif.c
++++ b/exif.c
+@@ -477,7 +477,7 @@
              }
          }
          if (DumpExifMap){
@@ -20,9 +19,8 @@ diff -urNad jhead-2.82~/exif.c jhead-2.82/exif.c
          }
  
  
-diff -urNad jhead-2.82~/makernote.c jhead-2.82/makernote.c
---- jhead-2.82~/makernote.c	2008-04-03 16:52:21.000000000 +0200
-+++ jhead-2.82/makernote.c	2008-05-24 13:42:33.000000000 +0200
+--- a/makernote.c
++++ b/makernote.c
 @@ -26,7 +26,7 @@
          }
  
