@@ -2,8 +2,9 @@ jhead (2.85-1) unstable; urgency=low
 
   * New upstream release
    - Closes: #504194 "CVE-2008-4640: insecure file handling"
+  * debian/patches/11_jhead.c.dpatch: removed since included upstream
 
- -- Ludovic Rousseau <rousseau@debian.org>  Thu, 06 Nov 2008 21:27:39 +0100
+ -- Ludovic Rousseau <rousseau@debian.org>  Thu, 06 Nov 2008 21:48:04 +0100
 
 jhead (2.84-2) unstable; urgency=high
 
