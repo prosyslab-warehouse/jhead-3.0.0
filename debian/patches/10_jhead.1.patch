@@ -1,14 +1,9 @@
-#! /bin/sh /usr/share/dpatch/dpatch-run
-## 10_jhead.1.dpatch by  <rousseau@imac.maison.bogus>
-##
-## All lines beginning with `## DP:' are a description of the patch.
-## DP: $ man --warnings -l jhead.1 > /dev/null
-## DP: <standard input>:46: warning: `relative' not defined
-## DP: <standard input>:54: warning: `&'' not defined
-## DP: <standard input>:282: warning: `size'' not defined
-## DP: solution: reformat the text to avoid a ' on the first column
+$ man --warnings -l jhead.1 > /dev/null
+<standard input>:46: warning: `relative' not defined
+<standard input>:54: warning: `&'' not defined
+<standard input>:282: warning: `size'' not defined
+solution: reformat the text to avoid a ' on the first column
 
-@DPATCH@
 --- a/jhead.1
 +++ b/jhead.1
 @@ -42,16 +42,16 @@

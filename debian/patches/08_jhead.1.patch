@@ -1,10 +1,5 @@
-#! /bin/sh /usr/share/dpatch/dpatch-run
-## 08_jhead.1.dpatch by  <rousseau@localhost.localdomain>
-##
-## All lines beginning with `## DP:' are a description of the patch.
-## DP: Closes: #435073: "jhead: -da example in man page reverses the dates"
+Closes: #435073: "jhead: -da example in man page reverses the dates"
 
-@DPATCH@
 --- a/jhead.1
 +++ b/jhead.1
 @@ -210,7 +210,7 @@

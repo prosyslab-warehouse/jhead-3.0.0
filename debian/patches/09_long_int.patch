@@ -1,13 +1,8 @@
-#! /bin/sh /usr/share/dpatch/dpatch-run
-## 09_long_int.dpatch by  <rousseau@imac.maison.bogus>
-##
-## All lines beginning with `## DP:' are a description of the patch.
-## DP: exif.c:405: warning: format ‘%05d’ expects type ‘int’, but argument 2 has type ‘long int’
-## DP: exif.c:405: warning: format ‘%05d’ expects type ‘int’, but argument 3 has type ‘long int’
-## DP: makernote.c:29: warning: format ‘%05d’ expects type ‘int’, but argument 2 has type ‘long int’
-## DP: makernote.c:29: warning: format ‘%05d’ expects type ‘int’, but argument 3 has type ‘long int’
+exif.c:405: warning: format ‘%05d’ expects type ‘int’, but argument 2 has type ‘long int’
+exif.c:405: warning: format ‘%05d’ expects type ‘int’, but argument 3 has type ‘long int’
+makernote.c:29: warning: format ‘%05d’ expects type ‘int’, but argument 2 has type ‘long int’
+makernote.c:29: warning: format ‘%05d’ expects type ‘int’, but argument 3 has type ‘long int’
 
-@DPATCH@
 --- a/exif.c
 +++ b/exif.c
 @@ -477,7 +477,7 @@
