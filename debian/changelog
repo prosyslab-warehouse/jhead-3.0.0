@@ -3,8 +3,9 @@ jhead (2.86-1) UNRELEASED; urgency=low
   * (NOT RELEASED YET) New upstream release
   * remove patches 01_makefile, 07_jhead.1, 08_jhead.1, 09_long_int,
     10_jhead.1 since they are now included upstream
+  * do not use quilt anymore (no patch needed)
 
- -- Ludovic Rousseau <rousseau@debian.org>  Sun, 15 Feb 2009 13:36:28 +0000
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun, 15 Feb 2009 14:44:15 +0100
 
 jhead (2.85-1) unstable; urgency=low
 
