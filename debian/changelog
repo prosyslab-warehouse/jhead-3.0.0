@@ -1,3 +1,10 @@
+jhead (2.86-2) unstable; urgency=low
+
+  * debian/patches/20_jhead.1: Closes: #515659
+    "jhead: Manpage error in '-te' example"
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Wed, 18 Feb 2009 16:52:45 +0100
+
 jhead (2.86-1) unstable; urgency=low
 
   * New upstream release
