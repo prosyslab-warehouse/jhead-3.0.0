@@ -1,3 +1,10 @@
+jhead (2.87-1) unstable; urgency=low
+
+  * New upstream release
+   - Closes: #517990: jhead: -ce broken (fix released in 2.87)
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sat, 07 Mar 2009 14:10:41 +0100
+
 jhead (2.86-2) unstable; urgency=low
 
   * debian/patches/20_jhead.1: Closes: #515659
