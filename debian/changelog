@@ -5,8 +5,10 @@ jhead (2.875-1) unstable; urgency=low
      message is now explicit that the erorr is in EXIF data and not the file
      system (Closes: #525724)
   * update from debhelper 4 to 7
+  * Standards-Version: 3.7.3 -> 3.8.1
+   - add support of noopt, nostrip and parallel= in DEB_BUILD_OPTIONS
 
- -- Ludovic Rousseau <rousseau@debian.org>  Thu, 30 Apr 2009 18:18:51 +0200
+ -- Ludovic Rousseau <rousseau@debian.org>  Thu, 30 Apr 2009 19:59:57 +0200
 
 jhead (2.87-1) unstable; urgency=low
 
