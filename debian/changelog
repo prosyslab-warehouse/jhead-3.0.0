@@ -1,3 +1,12 @@
+jhead (2.875-1) unstable; urgency=low
+
+  * New upstream release
+   - Fix "document Nonfatal Error: Illegal subdirectory link" the error
+     message is now explicit that the erorr is in EXIF data and not the file
+     system (Closes: #525724)
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Thu, 30 Apr 2009 18:14:29 +0200
+
 jhead (2.87-1) unstable; urgency=low
 
   * New upstream release
