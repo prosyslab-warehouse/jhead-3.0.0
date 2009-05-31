@@ -1,3 +1,10 @@
+jhead (2.875-2) unstable; urgency=low
+
+  * Fix "segmentation fault on corrupt input file" patch from upstream
+    debian/patches/30_buffer_overflow (Closes: #530401)
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun, 31 May 2009 17:36:13 +0200
+
 jhead (2.875-1) unstable; urgency=low
 
   * New upstream release
