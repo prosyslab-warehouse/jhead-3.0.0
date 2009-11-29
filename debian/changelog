@@ -1,11 +1,12 @@
-jhead (2.88-1) UNRELEASED; urgency=low
+jhead (1:2.88-1) UNRELEASED; urgency=low
 
   * New upstream release
     - debian/patches/30_buffer_overflow: patch included upstream
   * debian/control: Standards-Version: 3.8.1 -> 3.8.3. No change needed.
   * Move to "3.0 (quilt)" source format
+  * Use an epoch number since 2.88 < 2.875
 
- -- Ludovic Rousseau <rousseau@debian.org>  Sun, 29 Nov 2009 17:52:00 +0100
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun, 29 Nov 2009 17:52:51 +0100
 
 jhead (2.875-2) unstable; urgency=low
 
