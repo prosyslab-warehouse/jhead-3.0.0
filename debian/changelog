@@ -1,3 +1,10 @@
+jhead (1:2.88-2) unstable; urgency=low
+
+  * debian/control: add Depends: ${misc:Depends}
+    W: jhead source: debhelper-but-no-misc-depends jhead
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun, 03 Jan 2010 16:52:09 +0100
+
 jhead (1:2.88-1) unstable; urgency=low
 
   * New upstream release
