@@ -3,8 +3,9 @@ jhead (1:2.88-2) unstable; urgency=low
   * debian/control: add Depends: ${misc:Depends}
     W: jhead source: debhelper-but-no-misc-depends jhead
   * debian/patches/21_jhead.c: fix a spelling typo
+  * debian/patches/22_jhead.1: fix hyphen-used-as-minus-sign
 
- -- Ludovic Rousseau <rousseau@debian.org>  Sun, 03 Jan 2010 16:58:09 +0100
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun, 03 Jan 2010 17:03:59 +0100
 
 jhead (1:2.88-1) unstable; urgency=low
 
