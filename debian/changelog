@@ -1,3 +1,10 @@
+jhead (1:2.90-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/patches/* removed. They are now included upstream.
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Fri, 05 Feb 2010 18:42:07 +0100
+
 jhead (1:2.88-2) unstable; urgency=low
 
   * debian/control: add Depends: ${misc:Depends}
