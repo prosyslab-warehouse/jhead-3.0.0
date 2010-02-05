@@ -4,8 +4,9 @@ jhead (1:2.90-1) unstable; urgency=low
   * debian/patches/* removed. They are now included upstream.
   * debian/patches/23_jhead.1: fix manpage-has-errors-from-man
     usr/share/man/man1/jhead.1.gz 54: warning: macro `&'' not defined
+  * debian/control: Standards-Version: 3.8.3 -> 3.8.4. no change needed
 
- -- Ludovic Rousseau <rousseau@debian.org>  Fri, 05 Feb 2010 18:50:19 +0100
+ -- Ludovic Rousseau <rousseau@debian.org>  Fri, 05 Feb 2010 18:54:04 +0100
 
 jhead (1:2.88-2) unstable; urgency=low
 
