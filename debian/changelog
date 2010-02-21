@@ -1,3 +1,9 @@
+jhead (1:2.90-2) unstable; urgency=low
+
+  * debian/patches/24_jhead.1: Fix "confusing manpage" (Closes: #570608)
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun, 21 Feb 2010 16:15:40 +0100
+
 jhead (1:2.90-1) unstable; urgency=low
 
   * New upstream release
