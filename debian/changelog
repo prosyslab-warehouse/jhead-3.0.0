@@ -3,8 +3,9 @@ jhead (1:2.90-3) unstable; urgency=low
   * Fix "Can't run mogrify from graphicsmagick." add a Suggests: imagemagick
     (Closes: #463225)
   * debian/rules: use a minimal version
+  * Standards-Version: 3.8.4 -> 3.9.1. No change needed.
 
- -- Ludovic Rousseau <rousseau@debian.org>  Sun, 27 Mar 2011 18:20:35 +0000
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun, 27 Mar 2011 20:22:56 +0200
 
 jhead (1:2.90-2) unstable; urgency=low
 
