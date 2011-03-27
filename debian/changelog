@@ -1,3 +1,10 @@
+jhead (1:2.90-3) unstable; urgency=low
+
+  * Fix "Can't run mogrify from graphicsmagick." add a Suggests: imagemagick
+    (Closes: #463225)
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun, 27 Mar 2011 16:49:03 +0200
+
 jhead (1:2.90-2) unstable; urgency=low
 
   * debian/patches/24_jhead.1: Fix "confusing manpage" (Closes: #570608)
