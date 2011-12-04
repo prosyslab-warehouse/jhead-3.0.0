@@ -1,3 +1,10 @@
+jhead (1:2.93-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/patches/25_makefile: new patch
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun, 04 Dec 2011 17:01:37 +0100
+
 jhead (1:2.90-3) unstable; urgency=low
 
   * Fix "Can't run mogrify from graphicsmagick." add a Suggests: imagemagick

@@ -1,0 +1,10 @@
+Description: install binary in /usr/bin instead of /usr/local/bin
+Author: Ludovic Rousseau <rousseau@debian.org>
+--- a/makefile
++++ b/makefile
+@@ -20,4 +20,4 @@
+ 	rm -f $(objs) jhead
+ 
+ install:
+-	cp jhead ${DESTDIR}/usr/local/bin/
++	cp jhead ${DESTDIR}/usr/bin/
