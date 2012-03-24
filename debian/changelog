@@ -1,9 +1,11 @@
 jhead (1:2.95-1) unstable; urgency=low
 
   * New upstream release
+  * Fix "jhead -cmd 'jpegtran -progressive &i > &o' P1080931.JPG remove
+    Date/Time Original exif tag and others" fixed upstream (Closes: #662110)
   * debian/control: Standards-Version: 3.9.2 -> 3.9.3. No change needed.
 
- -- Ludovic Rousseau <rousseau@debian.org>  Sat, 24 Mar 2012 11:46:52 +0100
+ -- Ludovic Rousseau <rousseau@debian.org>  Sat, 24 Mar 2012 11:50:13 +0100
 
 jhead (1:2.93-1) unstable; urgency=low
 
