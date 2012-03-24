@@ -1,8 +1,9 @@
 jhead (1:2.95-1) unstable; urgency=low
 
   * New upstream release
+  * debian/control: Standards-Version: 3.9.2 -> 3.9.3. No change needed.
 
- -- Ludovic Rousseau <rousseau@debian.org>  Sat, 24 Mar 2012 11:41:16 +0100
+ -- Ludovic Rousseau <rousseau@debian.org>  Sat, 24 Mar 2012 11:46:52 +0100
 
 jhead (1:2.93-1) unstable; urgency=low
 
