@@ -1,3 +1,10 @@
+jhead (1:2.96-2) unstable; urgency=low
+
+  * Fix "documentation still hints at old "-nf" renaming functionality"
+    Apply attached patch (Closes: #691607)
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sun, 28 Oct 2012 10:28:57 +0100
+
 jhead (1:2.96-1) unstable; urgency=low
 
   * New upstream release

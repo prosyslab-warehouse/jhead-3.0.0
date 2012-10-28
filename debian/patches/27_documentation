@@ -1,0 +1,33 @@
+Description: remove documentation of -n
+Author: James R. Van Zandt <jrvz@comcast.net>
+Bug-Debian: http://bugs.debian.org/691607
+
+--- a/jhead.1
++++ b/jhead.1
+@@ -121,13 +121,7 @@
+ This option causes files to be renamed and/ or mmoved using the date
+ information from the Exif header "DateTimeOriginal" field.  If the file
+ is not an Exif file, or the DateTimeOriginal does not contain a valid
+-value, the file date is used.  Renaming is by default restricted to
+-files whose names consist largely of digits.  This effectively restricts
+-renaming to files that have not already been manually renamed, as the
+-default sequential names from digital cameras consist largely of digits.
+-Use the
+-.B \-n
+-option to force renaming of all files.  If the new name contains a '/',
++value, the file date is used.  If the new name contains a '/',
+ this will be interpreted as a new path, and the file will be moved
+ accordingly.
+                   
+--- a/jhead.c
++++ b/jhead.c
+@@ -1249,8 +1249,7 @@
+            "             '%%i' will include a sequence number, starting from 1. You can\n"
+            "             You can specify '%%03i' for example to get leading zeros.\n"
+            "             This feature is useful for ordering files from multiple digicams to\n"
+-           "             sequence of taking.  Only renames files whose names are mostly\n"
+-           "             numerical (as assigned by digicam)\n"
++           "             sequence of taking.\n"
+            "             The '.jpg' is automatically added to the end of the name.  If the\n"
+            "             destination name already exists, a letter or digit is added to \n"
+            "             the end of the name to make it unique.\n"
