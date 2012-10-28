@@ -1,3 +1,12 @@
+jhead (1:2.96-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/patches/26_makefile: Use flags set by dpkg-buildflags to enable
+    automatic hardening
+  * debian/compat: update from 7 to 9 to enable automatic hardening
+
+ -- Ludovic Rousseau <rousseau@debian.org>  Sat, 28 Jul 2012 09:25:22 +0200
+
 jhead (1:2.95-1) unstable; urgency=low
 
   * New upstream release
