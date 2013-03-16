@@ -2,15 +2,6 @@ Description: Use flags set by dpkg-buildflags to enable automatic hardening
 Author: Ludovic Rousseau <rousseau@debian.org>
 --- a/makefile
 +++ b/makefile
-@@ -3,7 +3,7 @@
- #--------------------------------
- OBJ=.
- SRC=.
--CFLAGS= -O3 -Wall
-+CFLAGS:= $(CFLAGS) -O3 -Wall
- 
- all: jhead
- 
 @@ -11,10 +11,10 @@
  	$(OBJ)/exif.o $(OBJ)/iptc.o $(OBJ)/gpsinfo.o $(OBJ)/makernote.o 
  
