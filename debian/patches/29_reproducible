@@ -1,0 +1,13 @@
+Description: remove the use of __DATE__ to make the build reproducible
+Author: Ludovic Rousseau <rousseau@debian.org>
+--- a/jhead.c
++++ b/jhead.c
+@@ -1500,7 +1500,7 @@
+         }else if (!strcmp(arg,"-q")){
+             Quiet = TRUE;
+         }else if (!strcmp(arg,"-V")){
+-            printf("Jhead version: "JHEAD_VERSION"   Compiled: "__DATE__"\n");
++            printf("Jhead version: "JHEAD_VERSION"\n");
+             exit(0);
+         }else if (!strcmp(arg,"-exifmap")){
+             DumpExifMap = TRUE;
