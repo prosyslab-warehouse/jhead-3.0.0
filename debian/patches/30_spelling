@@ -1,0 +1,13 @@
+Description: fix lintian spelling-error-in-binary usr/bin/jhead specifiy specify
+Author: Ludovic Rousseau <rousseau@debian.org>
+--- a/jhead.c
++++ b/jhead.c
+@@ -1589,7 +1589,7 @@
+             if (pOldDate){
+                 OldDate = ParseCmdDate(pOldDate+1);
+             }else{
+-                ErrFatal("Must specifiy second date for -da option");
++                ErrFatal("Must specify second date for -da option");
+             }
+             if (ExifTimeAdjust) ErrFatal("Can only use one of -da or -ta options at once");
+             ExifTimeAdjust = NewDate-OldDate;
