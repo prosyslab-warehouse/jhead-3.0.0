@@ -8,7 +8,7 @@ Homepage: http://www.sentex.net/~mwandel/jhead/
 
 Package: jhead
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libjpeg-progs
+Depends: ${shlibs:Depends}, ${misc:Depends}, libjpeg-turbo-progs
 Suggests: imagemagick
 Description: manipulate the non-image part of Exif compliant JPEG files
  jhead is a command line driven utility for extracting digital camera settings
