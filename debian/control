@@ -3,7 +3,7 @@ Section: graphics
 Priority: optional
 Maintainer: Ludovic Rousseau <rousseau@debian.org>
 Build-Depends: debhelper (>> 9)
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: http://www.sentex.net/~mwandel/jhead/
 
 Package: jhead
