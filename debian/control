@@ -4,6 +4,8 @@ Priority: optional
 Maintainer: Ludovic Rousseau <rousseau@debian.org>
 Build-Depends: debhelper (>> 9)
 Standards-Version: 3.9.8
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/jhead.git
+Vcs-Browser: https://anonscm.debian.org/git/collab-maint/jhead.git
 Homepage: http://www.sentex.net/~mwandel/jhead/
 
 Package: jhead
