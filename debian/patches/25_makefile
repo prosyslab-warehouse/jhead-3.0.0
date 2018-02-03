@@ -1,8 +1,16 @@
-Description: install binary in /usr/bin instead of /usr/local/bin
-Author: Ludovic Rousseau <rousseau@debian.org>
+From: Ludovic Rousseau <rousseau@debian.org>
+Date: Sat, 3 Feb 2018 10:21:36 +0100
+Subject: install binary in /usr/bin instead of /usr/local/bin
+
+---
+ makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/makefile b/makefile
+index 1544984..86a363c 100644
 --- a/makefile
 +++ b/makefile
-@@ -24,4 +24,4 @@
+@@ -24,4 +24,4 @@ clean:
  	rm -f $(objs) jhead
  
  install:

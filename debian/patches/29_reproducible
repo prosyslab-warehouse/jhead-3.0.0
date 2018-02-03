@@ -1,8 +1,16 @@
-Description: remove the use of __DATE__ to make the build reproducible
-Author: Ludovic Rousseau <rousseau@debian.org>
+From: Ludovic Rousseau <rousseau@debian.org>
+Date: Sat, 3 Feb 2018 10:21:36 +0100
+Subject: remove the use of __DATE__ to make the build reproducible
+
+---
+ jhead.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/jhead.c b/jhead.c
+index 67e9bf7..bbbf284 100644
 --- a/jhead.c
 +++ b/jhead.c
-@@ -1500,7 +1500,7 @@
+@@ -1500,7 +1500,7 @@ int main (int argc, char **argv)
          }else if (!strcmp(arg,"-q")){
              Quiet = TRUE;
          }else if (!strcmp(arg,"-V")){

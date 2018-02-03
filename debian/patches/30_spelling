@@ -1,8 +1,16 @@
-Description: fix lintian spelling-error-in-binary usr/bin/jhead specifiy specify
-Author: Ludovic Rousseau <rousseau@debian.org>
+From: Ludovic Rousseau <rousseau@debian.org>
+Date: Sat, 3 Feb 2018 10:21:36 +0100
+Subject: fix lintian spelling-error-in-binary usr/bin/jhead specifiy specify
+
+---
+ jhead.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/jhead.c b/jhead.c
+index 224ee1b..67e9bf7 100644
 --- a/jhead.c
 +++ b/jhead.c
-@@ -1589,7 +1589,7 @@
+@@ -1589,7 +1589,7 @@ int main (int argc, char **argv)
              if (pOldDate){
                  OldDate = ParseCmdDate(pOldDate+1);
              }else{
@@ -11,7 +19,7 @@ Author: Ludovic Rousseau <rousseau@debian.org>
              }
              if (ExifTimeAdjust) ErrFatal("Can only use one of -da or -ta options at once");
              ExifTimeAdjust = NewDate-OldDate;
-@@ -1688,7 +1688,7 @@
+@@ -1688,7 +1688,7 @@ int main (int argc, char **argv)
  
      if (ThumbSaveName != NULL && strcmp(ThumbSaveName, "&i") == 0){
          printf("Error: By specifying \"&i\" for the thumbail name, your original file\n"
